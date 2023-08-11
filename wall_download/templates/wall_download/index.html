@@ -1,0 +1,126 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool-Wallpapers</title>
+
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'img/site.webmanifest' %}">
+    
+  <header>
+    
+
+    <ul class="topnav" id="myTopnav">
+    <a href="{% url 'index' %}" >
+      <img class="logo" src="{% static 'img/android-chrome-192x192.png' %}" >
+    </a>
+      <li><a class="link" href="{% url 'nature' %}">nature</a></li>
+      <li><a class="link" href="{% url 'abstract' %}">abstract</a></li>
+      <li><a class="link" href="{% url 'flowers' %}">flowers</a></li>
+      <li><a class="link" href="{% url 'animals' %}">animal</a></li>
+      <li><a class="link" href="{% url 'dark' %}">dark</a></li>
+      <li class="icon">
+        <div class="ham" href="javascript:void(0);" style="font-size:25px;" onclick="myFunction()">☰</div>
+      </li>
+    </ul>
+
+ <!--   <nav>
+      <ul class="nav">
+          <li class="nav_li"><a class="link" href="{% url 'nature' %}">nature</a></li>
+          <li class="nav_li"><a class="link" href="{% url 'abstract' %}">abstract</a></li>
+          <li class="nav_li"><a class="link" href="{% url 'flowers' %}">flowers</a></li>
+          <li class="nav_li"><a class="link" href="{% url 'animals' %}">animal</a></li>
+          <li class="nav_li"><a class="link" href="{% url 'dark' %}">dark</a></li>
+      </ul>
+  </nav>
+  </header>-->
+<body>
+  <h2>Cool wallpapers</h2>
+    <p>Click images to download</p>
+      <div class="img_container">
+        
+        <a target="_blank" href="{% url 'img1' %}" download="img">
+          <img id="myImg1" class="myImg" src="{% static 'img/img1.jpg' %}" >
+        </a>
+
+        <a target="_blank" href="{% url 'img2' %}" download="img">
+          <img id="myImg2" class="myImg" src="{% static 'img/img2.jpg' %}" >
+        </a>
+
+        <a target="_blank" href="{% url 'img3' %}" download="img">
+          <img id="myImg3" class="myImg" src="{% static 'img/img3.jpg' %}" >
+        </a>
+
+        <a target="_blank" href="{% url 'img4' %}" download="img">
+          <img id="myImg4" class="myImg" src="{% static 'img/img4.png' %}" >
+        </a>
+
+        <a target="_blank" href="{% url 'img5' %}" download="img">
+          <img id="myImg5" class="myImg" src="{% static 'img/img5.jpg' %}"  >
+        </a>
+
+        <a target="_blank" href="{% url 'img6' %}" download="img">
+          <img id="myImg6" class="myImg" src="{% static 'img/img6.jpg' %}" >
+        </a>
+
+        <a target="_blank" href="{% url 'img7' %}" download="img">
+          <img id="myImg7" class="myImg" src="{% static 'img/img7.jpg' %}" >
+        </a>
+
+        <a target="_blank" href="{% url 'img8' %}" download="img">
+          <img id="myImg8" class="myImg" src="{% static 'img/img8.jpg' %}" >
+        </a>
+
+        <a target="_blank" href="{% url 'img9' %}" download="img">
+          <img id="myImg9" class="myImg" src="{% static 'img/img9.jpg' %}">
+        </a>
+          
+
+        <a target="_blank" href="{% url 'img10' %}" download="img">
+          <img id="myImg10" class="myImg" src="{% static 'img/img10.jpg' %}">
+        </a>
+          
+
+        <a target="_blank" href="{% url 'img11' %}" download="img">
+          <img id="myimg11" class="myImg" src="{% static 'img/img11.jpg' %}">
+        </a>
+          
+
+        <a target="_blank" href="{% url 'img12' %}" download="img">
+          <img id="myimg12" class="myImg" src="{% static 'img/img12.jpg' %}">
+        </a>
+          
+      </div>
+
+      <div class="download_btn">
+        <a href="{% url 'download' %}" download="All_img"> download all <ion-icon name="cloud-download-outline"></ion-icon></a>
+      </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+    </script>
+</body>
+
+
+
+
+
+</html>

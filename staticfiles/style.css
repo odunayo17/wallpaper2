@@ -1,0 +1,288 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap");
+
+* {
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background-color: #f7f4f4fd;
+  margin-left: 10px;
+  margin-bottom: 80px;
+}
+
+.logo {
+  height: 100px;
+  width: 100px;
+}
+
+.img_container {
+  padding: 100px;
+}
+
+.myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  height: 500px;
+  width: 350px;
+  padding: 5px;
+  transition: transform 0.5s;
+  border-radius: 12px;
+}
+
+.myImg:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+}
+
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 60px;
+  margin-top: 30px;
+  color: #0f0f0f;
+}
+
+h2::after {
+  display: block;
+  height: 2px;
+  background-color: #0f0f0f;
+  content: " ";
+  width: 350px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+p {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 30px;
+  margin-top: -17px;
+  color: #a8a8a8fd;
+}
+
+.download_btn {
+  display: grid;
+  place-content: center;
+}
+
+.download_btn a {
+  text-decoration: none;
+  background-color: #000;
+  height: 30px;
+  padding: 0 15px 15px;
+  padding-top: 20px;
+  width: 200px;
+  text-align: center;
+  color: #fff;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.download_btn a:hover {
+  background-color: #1b1a1ae7;
+  color: #fff;
+}
+
+ion-icon {
+  font-size: 17px;
+}
+
+/*================Nav Bar==============*/
+.ham {
+  cursor: pointer;
+  color: #fff;
+}
+
+ul.topnav {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #222222;
+  margin-top: -8px;
+  margin-left: -10px;
+  margin-right: -8px;
+}
+
+ul.topnav li {
+  float: right;
+}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.1s;
+  font-size: 17px;
+  margin-top: 15px;
+  text-transform: capitalize;
+  margin-right: 5px;
+}
+
+ul.topnav li a:hover {
+  color: #757474;
+  border-bottom: solid 2px #fff;
+}
+
+ul.topnav li.icon {
+  display: none;
+}
+
+/*========== Responsive ==========*/
+/* big tablet to 1200px (widths smaller than the 1040px row)*/
+@media only screen and (max-width: 1200px) {
+  .myImg {
+    margin-left: 100px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+/* Small tablet to big tablet: from 768px to 1023px*/
+@media only screen and (max-width: 1023px) {
+  .myImg {
+    margin-left: 40px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .myImg {
+    margin-left: 190px;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  .myImg {
+    margin-left: 100px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .myImg {
+    margin-left: 90px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .myImg {
+    margin-left: 40px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .logo {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+@media only screen and (max-width: 590px) {
+  .myImg {
+    margin-left: 30px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .logo {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .img_container {
+    display: grid;
+    place-content: center;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .logo {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .myImg {
+    margin-left: 5px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .logo {
+    height: 70px;
+    width: 70px;
+  }
+}
+/*================Nav Bar Responsive==============*/
+@media screen and (max-width: 680px) {
+  ul.topnav li:not(:first-child) {
+    display: none;
+  }
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  ul.topnav.responsive {
+    position: relative;
+  }
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: center;
+    border-bottom: none;
+    margin-top: -10px;
+  }
+}
